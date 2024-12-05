@@ -16,6 +16,8 @@ gem "turbo-rails"
 gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+# Utility-first CSS framework [https://github.com/rails/tailwindcss-rails]
+gem "tailwindcss-rails"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -39,6 +41,15 @@ gem "thruster", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+
+# Active Admin Gems
+gem "activeadmin", "4.0.0.beta14"
+
+# Plus integrations with:
+gem "devise"
+gem "cancancan"
+gem "draper"
+gem "pundit"
 
 # Primegap Gems
 gem "primegap-core", github: "lucatironi/primegap-core", branch: "main"

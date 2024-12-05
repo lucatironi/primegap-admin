@@ -1,0 +1,3 @@
+web: bundle exec rails server
+css: bundle exec rails tailwindcss:watch
+active_admin: bundle exec rails active_admin:watch
