@@ -7,4 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+
+if Rails.env.development?
+  AdminUser.create!(email: "admin@example.com", password: "password", password_confirmation: "password")
+  User.create!(email_address: "user@example.com", password: "password", password_confirmation: "password")
+
+  ["Acme & Co", "Weyland Yutani", "Tyrrel Corp", "Umbrella Corp", "Skynet"].each do |name|
+     Company.find_or_create_by!(name: name)
+  end
+  ["John Doe", "Sarah Connor", "Ellen Ripley", "John Deckard", "Luke Skywalker"].each do |name|
+    Customer.create!(full_name: name, email: "#{name.downcase.split(" ").join(".")}@xample.com", phone: "+49 #{rand.to_s[2..11]}")
+  end
+end
