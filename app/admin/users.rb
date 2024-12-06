@@ -4,8 +4,8 @@ ActiveAdmin.register User do
   controller do
     def update
       if params[:user][:password].blank?
-        params[:user].delete('password')
-        params[:user].delete('password_confirmation')
+        params[:user].delete("password")
+        params[:user].delete("password_confirmation")
       end
       super
     end
@@ -23,7 +23,7 @@ ActiveAdmin.register User do
   filter :created_at
 
   form do |f|
-    f.inputs 'User Details' do
+    f.inputs "User Details" do
       f.input :email_address
       f.input :password
       f.input :password_confirmation
@@ -38,7 +38,7 @@ ActiveAdmin.register User do
       row :created_at
       row :updated_at
     end
-    panel 'Sessions' do
+    panel "Sessions" do
       table_for user.sessions do
         column :user_agent
         column :created_at
