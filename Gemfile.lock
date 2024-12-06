@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/lucatironi/primegap-core.git
-  revision: b30d136076369cac7263dc7962f7a91451390d7b
+  revision: ab65102676289663865cdcbc6b9bef77c803e7ca
+  ref: ab65102
   branch: main
   specs:
     primegap-core (0.1.0)
@@ -357,7 +358,7 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    solid_cable (3.0.2)
+    solid_cable (3.0.3)
       actioncable (>= 7.2)
       activejob (>= 7.2)
       activerecord (>= 7.2)

@@ -52,7 +52,7 @@ gem "draper"
 gem "pundit"
 
 # Primegap Gems
-gem "primegap-core", github: "lucatironi/primegap-core", branch: "main"
+gem "primegap-core", github: "lucatironi/primegap-core", branch: "main", ref: "ab65102"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
