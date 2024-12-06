@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lucatironi/primegap-core.git
-  revision: b30d136076369cac7263dc7962f7a91451390d7b
+  revision: ab65102676289663865cdcbc6b9bef77c803e7ca
   branch: main
   specs:
     primegap-core (0.1.0)
