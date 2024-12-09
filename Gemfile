@@ -43,7 +43,7 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 # Active Admin Gems
-gem "activeadmin", "4.0.0.beta14"
+gem "activeadmin", "4.0.0.beta15"
 
 # Plus integrations with:
 gem "devise"
