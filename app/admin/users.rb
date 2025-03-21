@@ -45,9 +45,9 @@ ActiveAdmin.register User do
     end
     panel "Sessions" do
       table_for user.sessions do
+        column :ip_address
         column :user_agent
         column :created_at
-        column :updated_at
       end
     end
   end
