@@ -5,6 +5,9 @@ ActiveAdmin.register Company do
     selectable_column
     id_column
     column :name
+    column "customers" do |company|
+      company.customers.size
+    end
     column :created_at
     actions
   end
