@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Admin::Company", type: :feature do
-  let(:admin_path) { "/admin" }
+  let(:admin_path) { "" }
 
   before do
     @admin_user = FactoryBot.create(:admin_user)
